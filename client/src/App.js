@@ -2,6 +2,8 @@ import React from 'react'
 
 const App = () => {
 
+  const buyerEmail = "enter_buyers_email"
+
 
     function isDate(val) {
         return Object.prototype.toString.call(val) === '[object Date]'
@@ -57,7 +59,7 @@ const App = () => {
         
     }
     const makePayment=()=>{
-        getData({amount:500,email:'mohitkuhad8@gmail.com'}).then(response=>{
+        getData({amount:500,email: buyerEmail}).then(response=>{
             var information={
                 action:"https://securegw-stage.paytm.in/order/process",
                 params:response

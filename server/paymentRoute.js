@@ -10,18 +10,18 @@ const app = express();
 
 var userEmailId;
 var ebooklink;
-const MerchantID = "BKbrYY26351488905708";
-const MerchantKey = "iN1K2vIAeBxqL_Jq";
+const MerchantID = "enter_your_merchant_id";
+const MerchantKey = "enter_your_merchant_key";
 
 // Sending an email to buyer after the purchase.
-// If you do not wish to have this feature delete the code starting from line 16 to line 41 and also line 96 where this function is called.
+// If you do not wish to have this feature delete the code starting from line 18 to line 41 and also line 96 where this function is called.
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   secure: false,
   auth: {
-    user: "ebooksahityabbol@gmail.com",
-    pass: "zstvwkstchqjkheh",
+    user: "enter_your_email",
+    pass: "enter_authorisation_password",  // Remember authorisation password is different from the password you use to login you email account with.
   },
 });
 
